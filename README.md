@@ -1,3 +1,9 @@
+This is the frontend portion of Car Dealership application. I am using Angular to create the frontend. Oringally the frontend portion of "Riddlers Rides" was made with a Thymleaf. 
+I wanted to use Angular in order to gain more experience with it. I am modifying templates from Bootdev.com (Boostrap) to fit my CSS and HTLM needs. 
+
+
+
+
 # CarDealership
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.2.

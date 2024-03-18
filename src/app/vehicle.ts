@@ -1,3 +1,4 @@
+import { Make } from "./make";
 import { Model } from "./model";
 
 export class Vehicle {
@@ -9,7 +10,7 @@ export class Vehicle {
 
     color!: string;
 
-    isNew!: Boolean;
+    new!: Boolean;
 
     bodystyle!: string;
 
@@ -32,5 +33,8 @@ export class Vehicle {
     issold!: boolean;
     
     saleprice!: number;
+
+    selectedModel: Model = new Model;
+  selectedMake: Make = new Make; 
 
 }

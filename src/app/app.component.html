@@ -1,44 +1,11 @@
-
-
 <div class="navbar">
-  <a class="active" href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#services">Services</a>
-  <a href="#contact">Contact</a>
-  <div class="navbar-right">
-    <a href="#login">Login</a>
-    <a href="#signup">Sign Up</a>
-  </div>
-</div>
-  <main>
-<div class="wrapper">
-    <div class="gallery">
-      <a *ngFor="let vehicle of newVehicles;" href="#image-1">
-        <div class="gallery__item">
-          <img class="gallery__img" src="https://www.bootdey.com/image/350x280/20B2AA/000000" alt="Yosemite" />
-          <div class="gallery__details">
-            <span class="moodel">{{vehicle.models.make.make}}</span>
-            <span>{{vehicle.models.modelname}}</span>
-            
-          </div>
-        </div>
-      </a>
+    <a class="active" href="#home">Home</a>
+    <a href="#about">About</a>
+    <a routerLink="/addVehicle">Add Vehicle</a>
+    <a href="#contact">Contact</a>
+    <div class="navbar-right">
+      <a href="#login">Login</a>
+      <a href="#signup">Sign Up</a>
     </div>
   </div>
-
-<div class="container bootstrap snipets">
-    <h1 class="text-center text-muted">Product catalog</h1>
-    <div class="row flow-offset-1">
-      <div *ngFor="let vehicle of vehicles" class="col-xs-6 col-md-4">
-        <div class="product tumbnail thumbnail-3"><a href="#{{vehicle.vin}}"><img src="https://www.bootdey.com/image/350x280/FFB6C1/000000" alt=""></a>
-          <div class="caption">
-            <h6>{{vehicle.models.make.make}}<span>{{vehicle.models.modelname}}</span></h6><span class="price">
-              {{vehicle.isNew}}</span><span class="mileage">{{vehicle.vehicleid}}</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </main>
-<router-outlet />
-
+<router-outlet></router-outlet>
